@@ -7,7 +7,7 @@ $(function(){
                console.log('获取')
            }
 	$.ajax({
-		url:'wad/recommand/4',
+		url:'wad/popular/4',
 		method:'get',
 		dataType:'json',
 		success:function(data,status,xhr){

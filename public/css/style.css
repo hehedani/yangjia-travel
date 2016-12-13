@@ -4,27 +4,28 @@ header{}
 #sousuo{ height:80px;width:450px; border-radius:5px;padding:20px;background: rgba(230,230,230,0.3);position: absolute;top:300px;}
 #sousuo input{float: left;width: 300px;}
 #sousuo label{float: left;font-family: '微软雅黑';line-height: 40px;font-size: 20px;}
-.btn btn-lg btn-primary{width: 10px;}
 .admin p{color:red;}
 .latest{background: white;height: 30px;}
-.box{background:#fff;height:300px;width: 1000px;padding-top:30px; }
-section .left{float: left;width: 1000px;}
-.tab0{width: 204px;height:200px;;float: left;margin-left:20px;border:2px solid #ccc;}
-
-.foods{
+.propose_sight{background:#fff;height:350px;width: 1000px;}
+.left{float: left;width: 1000px;}
+.tab0{width: 204px;height:300px;float: left;margin-left:35px;border:2px solid #ccc;}
+.travel_show{
 	width: 1000px;
-	margin-top:20px; 
-    height:400px;
-    background:-webkit-gradient(linear, 0 0, 0 bottom,from(#6AD17E),to(rgba(31, 205, 170, 0.5)))}
-.food{width:300px;float: left;margin-left: 20px;}
-.top_1{width: 250px;border:2px solid #ccc;padding: 20px;}
-/*.admin{float:right;position:absolute;right: 50px;}*/
+    height:300px;
+    background:-webkit-gradient(linear, 0 0, 0 bottom,from(#6AD17E),to(rgba(31, 205, 170, 0.5)))}  
+.travel{width:1000px;}
+.season{float: left;margin:30px 0 0 40px;} 
+
+.top_1{width:210px;height:280px;float: left;margin-left: 30px;border:2px solid #ccc;background: #fff;}
+.admin{margin-left:50px; }
 /*美食推荐*/
-.summary{width:200px;background: rgba(230,230,230,0.5);float: left;position:absolute;top:980px;display:none;}
-.food:hover .summary{display: block;}
+.foods{padding-top:30px; }
+.summary{width:200px;background: rgba(230,230,230,0.5);float: left;}
+.top_1:hover .summary{display: block;}
 .tuijian{padding: 30px;height:400px;background: rgba(230,230,230,0.5); }
 .photo{float: left;padding: 30px;}
 .intro{float: left;padding: 30px;}
-section .right{float: right;width: 230px;height: 700px;background: #fff}
+.right{float: right;width: 330px;height: 700px;background: #fff;margin: 30px 0 0 0;}
 .foot{width:800px;margin:auto; margin-top:50px; }
 .foot p{text-align:center;}
+.btn btn-lg btn-primary {height: 30px;width: 200px;}

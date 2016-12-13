@@ -25,14 +25,15 @@
 <script type="text/javascript" src="./js/common-header.js"></script>
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/base.css" rel="stylesheet">
-<!-- <link href="css/style.css" rel="stylesheet"> -->
-<!-- <link rel="stylesheet" href="css/global.css"> -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
 <link rel="stylesheet" href="css/common-header9.css">
 </head>
 <body>
-<article class="container">
+<article>
 	<header>
-		<nav>
+	 <div class="admin"><a href="#" id='login'>个人中心</a>&nbsp&nbsp&nbsp&nbsp<span>收藏</span>&nbsp&nbsp&nbsp&nbsp<span>关于我们</span></div>
+    <nav>
 <!-- 导航 -->
 <div data-spm="2">
   <div class="ali-common-header">
@@ -1566,38 +1567,41 @@
             </div>           
           </div>    
         </li>
-        <li>
- <div class="admin"><a href="#" id='login'>个人中心</a>&nbsp&nbsp&nbsp&nbsp<span>收藏</span>&nbsp&nbsp&nbsp&nbsp<span>关于我们</span></div>
- </li>
       </ul>
     </div>
   </div>
 </div>
+
+<!-- 导航 -->
+
 		</nav>
 	<!-- banner -->
 	</header>
-
-<!--  <div class="tuijian">
-       <h3 class="text-center">推荐最多</h3>
-       <div class="photo" ><img id='photo_0' src=''></div>
-       <div class="intro">
-       <span>菜品名称:</span><span id='a'>12</span><br>
-          <span>别名:</span><span  id='b'></span><br>
-          <span>口味:</span><span  id='c'></span><br>
-          <span>地区:</span><span id='d'></span><br>
-          <span>推荐人群：</span><span id='e'></span><br>
-          <p id='f'></p>
-       </div>
-   </div>
-<div class="col-md-4 col-md-offset-4"  id="sousuo">
+  <div class="col-md-4 col-md-offset-4"  id="sousuo">
       <label>想去</label><input type="text" name="" class="form-control" id='input'>
-      <button type="submit" value="搜索" id="search"  class="btn btn-primary btn-block">搜索</button>
-    </div> -->
+      <button input="submit" value="搜索" id="search" class="btn btn-default">搜索</button>
+    </div>
 <!--     面板 -->
-    <div class="container">
+<style type="text/css">
+#list{width: 1024px;background: #fff;margin: 0 auto;}
+.pic{float: left; margin: 20px;}
+.food {float: left;padding:  50px;height:300px;}
+.clear{clear:both;}
+</style>
   <div class="row" id="list">
+  <div class="pic"></div>
+<ul class="food">
+  <li></li>
+</ul>
   </div>
-  </div>
+  <div class="clear"></div>
+    <footer>
+  <div class="foot">
+  <p>友情链接：
+笛风假期途牛微博客首都航空网易旅游中国经济网旅游百度旅游人民网旅游中国制造网51766旅游网成都青年旅行社欣欣旅游网驴妈妈旅游网奇艺旅游拉拉勾旅游网米胖旅游网百程旅行网新疆旅游酷讯旅游 wed114结婚网新通留学网二手车中国签证资讯网19楼途家网
+</p>
+</div>
+</footer> 
 </article>  
 <script src="js/arg-1.3.min.js"></script>  
 <script src="js/handlebars-v4.0.5.js"></script>
@@ -1606,16 +1610,16 @@
   {{#each wad}}
    <div class="col-lg-8">
     <div class="panel">
-    <img src="{{pic_1}}"/>
+    <div class="pic"><img src="{{pic_1}}"/></div>
     <ul>
       <li>
          <a href="search.html?id={{id}}">
-        {{name}}
+        菜品名称：{{name}}
         </a>
       </li>
-      <li><p>{{taste}}</p></li>
-      <li><p>{{propose}}</p></li>
-      <li><p>{{area}}</p></li>
+      <li><p>口味：{{taste}}</p></li>
+      <li><p>推荐人群：{{propose}}</p></li>
+      <li><p>地区：{{area}}</p></li>
     </ul>   
     </div>
     </div>

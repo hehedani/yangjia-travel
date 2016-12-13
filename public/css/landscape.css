@@ -1,0 +1,10 @@
+.type{
+	margin:0 auto;
+	width: 1200px;
+    background:-webkit-gradient(linear, 0 0, 0 bottom,from(#6AD17E),to(rgba(31, 205, 170, 0.5)))}  
+.lake{margin-bottom: 50px;}
+.lake img{float: left;padding:30px;}
+.intro{width:500px;float: left;padding:25px }
+.clear{clear: both}
+.foot{width:800px;margin:auto; margin-top:50px; }
+.foot p{text-align:center;}

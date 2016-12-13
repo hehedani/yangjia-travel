@@ -16,23 +16,20 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`travel` /*!40100 DEFAULT CHARACTER SET 
 
 USE `travel`;
 
-/*Table structure for table `wine_and_dine` */
+/*Table structure for table `picture_set` */
 
-DROP TABLE IF EXISTS `wine_and_dine`;
+DROP TABLE IF EXISTS `picture_set`;
 
-CREATE TABLE `wine_and_dine` (
+CREATE TABLE `picture_set` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `alias` varchar(50) DEFAULT NULL,
-  `taste` varchar(20) DEFAULT NULL,
-  `area` varchar(50) DEFAULT NULL,
-  `history` varchar(500) DEFAULT NULL,
-  `propose` varchar(50) DEFAULT NULL,
-  `intro` varchar(1000) DEFAULT NULL,
-  `pic_1` varchar(50) DEFAULT NULL,
-  `pic_2` varchar(500) DEFAULT NULL,
+  `item_id` int(10) unsigned NOT NULL,
+  `category` varchar(20) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `intro` varchar(100) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `time` time DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
